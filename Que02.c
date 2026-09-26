@@ -2,19 +2,22 @@
 
 int main()
 {
-    char ch;
+    int a, b, c;
 
-    printf("Enter a character: ");
-    scanf(" %c", &ch);
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
 
-    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
-        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+    if (a >= b && a >= c)
     {
-        printf("Vowel");
+        printf("Largest = %d", a);
+    }
+    else if (b >= a && b >= c)
+    {
+        printf("Largest = %d", b);
     }
     else
     {
-        printf("Consonant");
+        printf("Largest = %d", c);
     }
 
     return 0;
