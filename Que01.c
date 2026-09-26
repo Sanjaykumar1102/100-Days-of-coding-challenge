@@ -2,26 +2,26 @@
 
 int main()
 {
-    char ch;
+    int year;
 
-    printf("Enter a character: ");
-    scanf("%c", &ch);
+    printf("Enter a year: ");
+    scanf("%d", &year);
 
-    if (ch >= 'A' && ch <= 'Z')
+    if (year % 400 == 0)
     {
-        printf("Uppercase Alphabet");
+        printf("Leap Year");
     }
-    else if (ch >= 'a' && ch <= 'z')
+    else if (year % 100 == 0)
     {
-        printf("Lowercase Alphabet");
+        printf("Not a Leap Year");
     }
-    else if (ch >= '0' && ch <= '9')
+    else if (year % 4 == 0)
     {
-        printf("Digit");
+        printf("Leap Year");
     }
     else
     {
-        printf("Special Character");
+        printf("Not a Leap Year");
     }
 
     return 0;
